@@ -12,9 +12,11 @@ Rails.application.routes.draw do
   resources :category
   resources :genre
   resources :movie
+
+    put '/movies/edit' => 'movie#update'
     get '/movies/new' => 'movie#new'
     get '/movies/:id' => 'movie#show'
-
+    get '/movies/edit' => 'movie#edit'
     post '/movies' => 'movie#create'
 
 # get '/index' do
