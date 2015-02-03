@@ -12,7 +12,10 @@ Rails.application.routes.draw do
   resources :category
   resources :genre
   resources :movie
+    get '/movies/new' => 'movie#new'
     get '/movies/:id' => 'movie#show'
+
+    post '/movies' => 'movie#create'
 
 # get '/index' do
 # get '/login' do
