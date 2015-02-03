@@ -1,8 +1,5 @@
 class SessionController < ActionController::Base
 
-  def index
-  end
-
   def create
     user = User.new(params[:user])
     session[:user_id] = user.id
