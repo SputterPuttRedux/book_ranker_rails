@@ -11,6 +11,10 @@ class MovieController < ActionController::Base
     Movie.create(params[:movie])
   end
 
+  def edit
+
+  end
+
 
   protect_from_forgery with: :exception
 end
