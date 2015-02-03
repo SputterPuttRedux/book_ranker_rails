@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-# get '/' do
 
-  resources :users
-  resources :categories
-  resources :genres
-  resources :movies
+    get '/' => 'welcome#index'
+
+  resources :session
+    get '/sessions' => 'session#new'
+    post '/sessions' => 'session#create'
+
+
+  resources :user
+  resources :category
+  resources :genre
+  resources :movie
+    get '/movies/:id' => 'movie#show'
 
 # get '/index' do
 # get '/login' do
