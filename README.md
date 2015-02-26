@@ -1,2 +1,2 @@
-# book_ranker_rails
+# movie_ranker_rails
 Phase 3 Audition Sinatra App ported to Rails
